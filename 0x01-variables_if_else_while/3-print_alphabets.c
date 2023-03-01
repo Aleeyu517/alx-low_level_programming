@@ -1,20 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet.
+ * main - Prints the alphabetic in lower and upper case
  *
- * Return: Always 0
+ * Return: Always (Success)
  */
 int main(void)
 {
-	char alp[26] =
-		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	char c;
 
-	for (i = 0; i < 26; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(alp[i]);
+		putchar(c);
 	}
-	putchar ('\n');
+
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
+
 	return (0);
 }
